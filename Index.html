@@ -1,1 +1,919 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>महेन्द्र राठी | वार्ड 33, लक्ष्मण विहार – सैक्टर 4, गुरुग्राम</title>
+<meta name="description" content="महेन्द्र राठी – वार्ड 33 (लक्ष्मण विहार - सैक्टर 4), गुरुग्राम के जनसेवक। संकल्प • सेवा • समाधान।" />
 
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@300;400;500;600;700;800&family=Hind:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy:   '#0f172a',
+          saffron:'#f97316',
+          bharat: '#16a34a',
+        },
+        fontFamily: {
+          display: ['"Yatra One"', 'cursive'],
+          head:    ['Mukta', 'sans-serif'],
+          body:    ['Hind', 'sans-serif'],
+          pop:     ['Poppins', 'sans-serif'],
+        },
+        boxShadow: {
+          'soft': '0 20px 60px -20px rgba(15,23,42,0.18)',
+          'glow': '0 0 0 1px rgba(249,115,22,0.15), 0 20px 45px -18px rgba(249,115,22,0.45)',
+        },
+      },
+    },
+  };
+</script>
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<!-- GLightbox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+<!-- Fallback image handler -->
+<script>
+  window.imgFallback = function (img) {
+    img.onerror = null;
+    var label = img.getAttribute('data-label') || 'महेन्द्र राठी';
+    var svg =
+      '<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900">' +
+        '<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">' +
+          '<stop offset="0%" stop-color="#0f172a"/>' +
+          '<stop offset="55%" stop-color="#f97316"/>' +
+          '<stop offset="100%" stop-color="#16a34a"/>' +
+        '</linearGradient></defs>' +
+        '<rect width="900" height="900" fill="url(#g)"/>' +
+        '<circle cx="450" cy="380" r="90" fill="rgba(255,255,255,0.14)"/>' +
+        '<text x="450" y="400" fill="#ffffff" font-family="sans-serif" font-size="70" font-weight="700" text-anchor="middle">म</text>' +
+        '<text x="450" y="560" fill="#ffffff" font-family="sans-serif" font-size="38" font-weight="600" text-anchor="middle">' + label + '</text>' +
+      '</svg>';
+    img.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+  };
+</script>
+
+<style>
+  :root{ --navy:#0f172a; --saffron:#f97316; --bharat:#16a34a; }
+  html{ scroll-padding-top: 7rem; }
+  body{ font-family:'Hind', sans-serif; color: var(--navy); background:#ffffff; -webkit-font-smoothing: antialiased; overflow-x:hidden; }
+  h1,h2,h3,h4,.font-head{ font-family:'Mukta', sans-serif; }
+  .font-display{ font-family:'Yatra One', cursive; }
+
+  .text-gradient{
+    background: linear-gradient(100deg,#0f172a 0%, #f97316 42%, #16a34a 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .text-gradient-warm{
+    background: linear-gradient(100deg,#f97316 0%, #fb923c 40%, #16a34a 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+
+  .glass{
+    background: rgba(255,255,255,0.62);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgba(255,255,255,0.7);
+  }
+  .glass-dark{
+    background: rgba(15,23,42,0.55);
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .masonry{ column-count:1; column-gap:1rem; }
+  @media (min-width:640px){  .masonry{ column-count:2; } }
+  @media (min-width:1024px){ .masonry{ column-count:3; } }
+  @media (min-width:1280px){ .masonry{ column-count:4; } }
+  .masonry-item{ break-inside: avoid; margin-bottom: 1rem; }
+
+  .nav-link{ position:relative; }
+  .nav-link::after{
+    content:''; position:absolute; left:50%; bottom:6px;
+    width:0; height:2px; border-radius:99px;
+    background:linear-gradient(90deg,var(--saffron),var(--bharat));
+    transform:translateX(-50%);
+    transition:width .35s cubic-bezier(.4,0,.2,1);
+  }
+  .nav-link:hover::after{ width:55%; }
+
+  ::-webkit-scrollbar{ width:10px; }
+  ::-webkit-scrollbar-track{ background:#f8fafc; }
+  ::-webkit-scrollbar-thumb{
+    background:linear-gradient(180deg,var(--saffron),var(--bharat));
+    border-radius:99px; border:2px solid #f8fafc;
+  }
+
+  @keyframes waPulse{
+    0%{ box-shadow:0 0 0 0 rgba(37,211,102,.55); }
+    70%{ box-shadow:0 0 0 20px rgba(37,211,102,0); }
+    100%{ box-shadow:0 0 0 0 rgba(37,211,102,0); }
+  }
+  .wa-pulse{ animation: waPulse 2.4s infinite; }
+
+  @keyframes floaty{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-14px); }
+  }
+  .floaty{ animation: floaty 6s ease-in-out infinite; }
+
+  .glightbox-clean .gslide-description{
+    background: rgba(15,23,42,.72) !important;
+    backdrop-filter: blur(14px);
+    border-radius: 0 0 14px 14px;
+  }
+  .glightbox-clean .gslide-title{
+    color:#fff !important; font-family:'Mukta',sans-serif !important;
+    font-weight:700 !important; letter-spacing:.2px;
+  }
+  .gbtn{ background: rgba(255,255,255,.12) !important; backdrop-filter: blur(8px); border-radius: 12px !important; }
+  .gbtn:hover{ background: var(--saffron) !important; }
+
+  ::selection{ background:var(--saffron); color:#fff; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.01ms !important; transition-duration:.01ms !important; }
+  }
+</style>
+</head>
+
+<body class="bg-white antialiased">
+
+<!-- ══════════ 1. STICKY GLASS HEADER ══════════ -->
+<header id="site-header" class="fixed inset-x-0 top-0 z-[60]">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <nav id="navbar"
+         class="mt-3 flex items-center justify-between rounded-2xl border border-white/60 bg-white/60 px-4 py-2.5 shadow-[0_10px_40px_-15px_rgba(15,23,42,0.15)] backdrop-blur-xl transition-all duration-500">
+
+      <a href="#home" class="group flex items-center gap-3">
+        <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-saffron via-orange-500 to-bharat text-white shadow-lg shadow-saffron/30 transition-transform duration-500 group-hover:scale-105 group-hover:rotate-3">
+          <span class="font-display text-xl leading-none">म</span>
+        </span>
+        <span class="leading-none">
+          <span class="block font-head text-lg font-extrabold tracking-tight text-navy sm:text-xl">महेन्द्र राठी</span>
+          <span class="mt-0.5 block text-[9px] font-semibold uppercase tracking-[0.22em] text-saffron sm:text-[10px]">वार्ड 33 • गुरुग्राम</span>
+        </span>
+      </a>
+
+      <ul class="hidden items-center gap-1 lg:flex">
+        <li><a href="#home"    class="nav-link rounded-xl px-4 py-2 text-sm font-semibold text-navy/75 transition hover:bg-navy/5 hover:text-navy">होम</a></li>
+        <li><a href="#vision"  class="nav-link rounded-xl px-4 py-2 text-sm font-semibold text-navy/75 transition hover:bg-navy/5 hover:text-navy">विजन</a></li>
+        <li><a href="#work"    class="nav-link rounded-xl px-4 py-2 text-sm font-semibold text-navy/75 transition hover:bg-navy/5 hover:text-navy">हमारे कार्य</a></li>
+        <li><a href="#chaupal" class="nav-link rounded-xl px-4 py-2 text-sm font-semibold text-navy/75 transition hover:bg-navy/5 hover:text-navy">चौपाल</a></li>
+        <li><a href="#contact" class="nav-link rounded-xl px-4 py-2 text-sm font-semibold text-navy/75 transition hover:bg-navy/5 hover:text-navy">संपर्क</a></li>
+      </ul>
+
+      <a href="#chaupal"
+         class="hidden items-center gap-2 rounded-xl bg-navy px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-navy/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-gradient-to-r hover:from-saffron hover:to-bharat hover:shadow-glow lg:inline-flex">
+        समस्या दर्ज करें
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <button id="menuBtn" aria-label="मेन्यू"
+              class="grid h-11 w-11 place-items-center rounded-xl border border-navy/10 bg-white/70 text-navy transition hover:bg-navy hover:text-white lg:hidden">
+        <svg id="menuIcon" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+
+    <div id="mobileMenu"
+         class="mt-2 hidden overflow-hidden rounded-2xl border border-white/60 bg-white/85 p-3 shadow-2xl backdrop-blur-xl lg:hidden">
+      <a href="#home"    class="block rounded-xl px-4 py-3 font-semibold text-navy/80 transition hover:bg-saffron/10 hover:text-saffron">होम</a>
+      <a href="#vision"  class="block rounded-xl px-4 py-3 font-semibold text-navy/80 transition hover:bg-saffron/10 hover:text-saffron">विजन</a>
+      <a href="#work"    class="block rounded-xl px-4 py-3 font-semibold text-navy/80 transition hover:bg-saffron/10 hover:text-saffron">हमारे कार्य</a>
+      <a href="#chaupal" class="block rounded-xl px-4 py-3 font-semibold text-navy/80 transition hover:bg-saffron/10 hover:text-saffron">चौपाल</a>
+      <a href="#contact" class="block rounded-xl px-4 py-3 font-semibold text-navy/80 transition hover:bg-saffron/10 hover:text-saffron">संपर्क</a>
+      <a href="#chaupal" class="mt-2 block rounded-xl bg-gradient-to-r from-saffron to-bharat px-4 py-3 text-center font-bold text-white shadow-lg">समस्या दर्ज करें</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ══════════ 2. HERO ══════════ -->
+<section id="home" class="relative overflow-hidden pt-36 pb-16 lg:pt-44 lg:pb-24">
+
+  <div class="pointer-events-none absolute inset-0 -z-10">
+    <div class="absolute -top-44 -right-32 h-[38rem] w-[38rem] rounded-full bg-saffron/20 blur-[130px]"></div>
+    <div class="absolute top-52 -left-40 h-[32rem] w-[32rem] rounded-full bg-bharat/15 blur-[130px]"></div>
+    <div class="absolute inset-0 opacity-[0.55]
+                [background-image:linear-gradient(to_right,rgba(15,23,42,0.055)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.055)_1px,transparent_1px)]
+                [background-size:64px_64px]
+                [mask-image:radial-gradient(ellipse_at_center,black,transparent_72%)]"></div>
+  </div>
+
+  <div class="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.12fr_0.88fr] lg:gap-12">
+
+    <div data-aos="fade-up" data-aos-duration="900">
+      <span class="inline-flex items-center gap-2 rounded-full border border-saffron/25 bg-saffron/10 px-4 py-1.5 text-xs font-bold tracking-wide text-saffron sm:text-sm">
+        <span class="relative flex h-2 w-2">
+          <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-saffron opacity-75"></span>
+          <span class="relative inline-flex h-2 w-2 rounded-full bg-saffron"></span>
+        </span>
+        वार्ड 33 • लक्ष्मण विहार – सैक्टर 4, गुरुग्राम
+      </span>
+
+      <h1 class="mt-7 font-head text-[2.75rem] font-extrabold leading-[1.06] tracking-tight sm:text-6xl lg:text-[4.6rem]">
+        <span class="text-gradient">संकल्प • सेवा • समाधान</span>
+      </h1>
+
+      <p class="mt-6 max-w-xl font-head text-xl font-bold leading-relaxed text-navy/90 sm:text-2xl">
+        वार्ड 33 (लक्ष्मण विहार - सैक्टर 4) का अपना जनसेवक।
+      </p>
+
+      <p class="mt-4 max-w-xl text-base leading-relaxed text-navy/60 sm:text-lg">
+        हर घर की आवाज़, हर गली की समस्या — और उसका ईमानदार समाधान।
+        विकास की राह पर सबको साथ लेकर चलना ही मेरा संकल्प है।
+      </p>
+
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a href="#chaupal"
+           class="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-2xl bg-gradient-to-r from-saffron via-orange-500 to-bharat px-7 py-4 font-head text-base font-bold text-white shadow-xl shadow-saffron/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-saffron/50 active:translate-y-0">
+          <span class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full"></span>
+          <svg class="relative h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          <span class="relative">समस्या दर्ज करें</span>
+        </a>
+
+        <a href="https://wa.me/919810845923" target="_blank" rel="noopener"
+           class="group inline-flex items-center gap-2.5 rounded-2xl border-2 border-navy/12 bg-white/70 px-7 py-4 font-head text-base font-bold text-navy backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-[#25D366] hover:bg-[#25D366] hover:text-white hover:shadow-xl hover:shadow-[#25D366]/30">
+          <svg class="h-5 w-5 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          व्हाट्सएप पर जुड़ें
+        </a>
+      </div>
+
+      <div class="mt-12 grid max-w-lg grid-cols-3 gap-4">
+        <div class="rounded-2xl border border-navy/5 bg-white/70 p-4 text-center shadow-sm backdrop-blur">
+          <p class="font-head text-2xl font-extrabold text-saffron sm:text-3xl">15+</p>
+          <p class="mt-1 text-[11px] font-semibold leading-tight text-navy/55 sm:text-xs">वर्षों का<br>जनसेवा अनुभव</p>
+        </div>
+        <div class="rounded-2xl border border-navy/5 bg-white/70 p-4 text-center shadow-sm backdrop-blur">
+          <p class="font-head text-2xl font-extrabold text-bharat sm:text-3xl">5000+</p>
+          <p class="mt-1 text-[11px] font-semibold leading-tight text-navy/55 sm:text-xs">समस्याओं का<br>समाधान</p>
+        </div>
+        <div class="rounded-2xl border border-navy/5 bg-white/70 p-4 text-center shadow-sm backdrop-blur">
+          <p class="font-head text-2xl font-extrabold text-navy sm:text-3xl">24×7</p>
+          <p class="mt-1 text-[11px] font-semibold leading-tight text-navy/55 sm:text-xs">जनता के लिए<br>उपलब्ध</p>
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150" class="relative">
+      <div class="relative mx-auto max-w-[26rem]">
+        <div class="absolute -inset-5 rounded-[3rem] bg-gradient-to-tr from-saffron/35 via-white to-bharat/30 blur-2xl"></div>
+        <div class="absolute -inset-2 rounded-[2.7rem] border border-navy/5"></div>
+
+        <div class="relative overflow-hidden rounded-[2.25rem] border-[7px] border-white bg-navy/5 shadow-2xl">
+          <img id="profilePhoto"
+               src="https://i.ibb.co/fY1m7ZLv/Picsart-26-03-26-23-19-01-199.png"
+               alt="महेन्द्र राठी – जनसेवक, वार्ड 33 गुरुग्राम"
+               data-label="महेन्द्र राठी"
+               onerror="imgFallback(this)"
+               class="h-[24rem] w-full object-cover object-top transition-transform duration-[1200ms] ease-out hover:scale-105 sm:h-[30rem]" />
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy/35 via-transparent to-transparent"></div>
+        </div>
+
+        <div class="glass floaty absolute -bottom-7 left-1/2 w-[86%] -translate-x-1/2 rounded-2xl px-5 py-3.5 shadow-2xl">
+          <div class="flex items-center gap-3">
+            <span class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-saffron to-bharat text-white">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            </span>
+            <div class="leading-tight">
+              <p class="font-head text-sm font-extrabold text-navy">जनसेवा में समर्पित</p>
+              <p class="text-[11px] font-medium text-navy/55">हर दिन, हर मोहल्ले में</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute -right-3 -top-3 grid h-14 w-14 place-items-center rounded-2xl bg-white shadow-xl ring-1 ring-navy/5 sm:-right-5 sm:-top-5">
+          <span class="font-display text-lg text-saffron">33</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ 3. VISION / परिचय ══════════ -->
+<section id="vision" class="relative overflow-hidden bg-gradient-to-b from-white via-slate-50/70 to-white py-20 lg:py-28">
+  <div class="pointer-events-none absolute -left-40 top-1/3 h-[28rem] w-[28rem] rounded-full bg-bharat/10 blur-[120px]"></div>
+
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+
+      <div data-aos="fade-right" class="relative order-2 lg:order-1">
+        <div class="relative mx-auto h-[26rem] max-w-md sm:h-[30rem]">
+          <div class="absolute left-0 top-6 w-[62%] -rotate-6 overflow-hidden rounded-3xl border-[6px] border-white bg-navy/5 shadow-2xl transition-all duration-700 hover:-rotate-3 hover:scale-[1.03]">
+            <img src="https://i.ibb.co/x86qKKHd/1000180926.jpg"
+                 alt="महेन्द्र राठी – जनसंपर्क"
+                 data-label="जनसंपर्क"
+                 onerror="imgFallback(this)"
+                 class="h-64 w-full object-cover sm:h-80" />
+          </div>
+
+          <div class="absolute bottom-0 right-0 w-[68%] rotate-3 overflow-hidden rounded-3xl border-[6px] border-white bg-navy/5 shadow-2xl transition-all duration-700 hover:rotate-0 hover:scale-[1.03]">
+            <img src="https://i.ibb.co/B5JMBgh5/1000181963.jpg"
+                 alt="महेन्द्र राठी – जनसुनवाई"
+                 data-label="जनसुनवाई"
+                 onerror="imgFallback(this)"
+                 class="h-72 w-full object-cover sm:h-88" />
+          </div>
+
+          <div class="absolute right-6 top-2 h-16 w-16 rounded-full bg-gradient-to-br from-saffron/25 to-bharat/25 blur-md"></div>
+        </div>
+      </div>
+
+      <div data-aos="fade-left" class="order-1 lg:order-2">
+        <span class="inline-flex items-center gap-2 rounded-full bg-navy/5 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-navy/60">
+          परिचय
+        </span>
+
+        <h2 class="mt-5 font-head text-4xl font-extrabold leading-tight text-navy sm:text-5xl">
+          जन-जन की आवाज़,<br />
+          <span class="text-gradient-warm">एक नए और विकसित गुरुग्राम का संकल्प</span>
+        </h2>
+
+        <div class="mt-7 space-y-5 text-[1.02rem] leading-relaxed text-navy/65 sm:text-lg">
+          <p>
+            <strong class="font-semibold text-navy">महेन्द्र राठी</strong> पिछले कई वर्षों से वार्ड 33 — लक्ष्मण विहार एवं सैक्टर 4 — के निवासियों की सेवा में समर्पित हैं।
+            सड़क, नाली, पानी, बिजली, सफाई अथवा सुरक्षा — हर समस्या को वे अपनी निजी ज़िम्मेदारी मानकर हल करते हैं।
+          </p>
+          <p>
+            उनका मानना है कि विकास केवल फाइलों और नारों से नहीं, बल्कि हर गली तक पहुँचने वाली सुविधाओं से होता है।
+            इसी सोच के साथ वे <strong class="font-semibold text-navy">"डिजिटल चौपाल"</strong> के माध्यम से हर नागरिक की आवाज़ सीधे सुनते हैं और उसका समाधान सुनिश्चित करते हैं।
+          </p>
+          <p>
+            पारदर्शिता, ईमानदारी और निरंतर संवाद — यही उनकी कार्यशैली की पहचान है।
+          </p>
+        </div>
+
+        <div class="mt-9 grid gap-3 sm:grid-cols-2">
+          <div class="flex items-start gap-3 rounded-2xl border border-navy/5 bg-white p-4 shadow-sm transition hover:shadow-lg">
+            <span class="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-saffron/10 text-saffron">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+            </span>
+            <div>
+              <p class="font-head text-sm font-bold text-navy">बुनियादी ढाँचा</p>
+              <p class="text-xs text-navy/55">सड़क, नाली व स्ट्रीट लाइट</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 rounded-2xl border border-navy/5 bg-white p-4 shadow-sm transition hover:shadow-lg">
+            <span class="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-bharat/10 text-bharat">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11a8 8 0 1 0-16 0c0 6.5 8 11 8 11Z"/><circle cx="12" cy="11" r="3"/></svg>
+            </span>
+            <div>
+              <p class="font-head text-sm font-bold text-navy">स्वच्छ व सुरक्षित वार्ड</p>
+              <p class="text-xs text-navy/55">सफाई, कचरा व सुरक्षा</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 rounded-2xl border border-navy/5 bg-white p-4 shadow-sm transition hover:shadow-lg">
+            <span class="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-navy/8 text-navy">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </span>
+            <div>
+              <p class="font-head text-sm font-bold text-navy">जनसंपर्क</p>
+              <p class="text-xs text-navy/55">हर मोहल्ले में नियमित चौपाल</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3 rounded-2xl border border-navy/5 bg-white p-4 shadow-sm transition hover:shadow-lg">
+            <span class="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-saffron/10 text-saffron">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>
+            </span>
+            <div>
+              <p class="font-head text-sm font-bold text-navy">तेज़ समाधान</p>
+              <p class="text-xs text-navy/55">शिकायत दर्ज, कार्रवाई सुनिश्चित</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#work" class="group mt-9 inline-flex items-center gap-2 font-head text-base font-bold text-saffron transition hover:text-bharat">
+          हमारे कार्य देखें
+          <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ 4. GALLERY ══════════ -->
+<section id="work" class="relative overflow-hidden py-20 lg:py-28">
+  <div class="pointer-events-none absolute -right-40 top-20 h-[30rem] w-[30rem] rounded-full bg-saffron/10 blur-[130px]"></div>
+
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+
+    <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
+      <span class="inline-flex items-center gap-2 rounded-full bg-bharat/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-bharat">
+        हमारे कार्य
+      </span>
+      <h2 class="mt-5 font-head text-4xl font-extrabold leading-tight text-navy sm:text-5xl lg:text-6xl">
+        जमीन पर <span class="text-gradient-warm">जनसेवक</span>
+      </h2>
+      <p class="mt-4 text-base leading-relaxed text-navy/60 sm:text-lg">
+        नारे नहीं, काम बोलता है। वार्ड 33 की हर गली, हर मोहल्ले में जनसेवा के वास्तविक पलों की एक झलक।
+      </p>
+      <div class="mx-auto mt-7 h-1 w-24 rounded-full bg-gradient-to-r from-saffron to-bharat"></div>
+    </div>
+
+    <div class="hidden aspect-[4/5] aspect-[4/3] aspect-square aspect-[3/4] aspect-[5/4]"></div>
+
+    <div id="masonryGrid" class="masonry mt-14" data-aos="fade-up" data-aos-delay="100"></div>
+
+    <div class="mt-14 text-center" data-aos="fade-up">
+      <a href="https://wa.me/919810845923" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2.5 rounded-2xl border-2 border-navy/10 bg-white px-7 py-4 font-head text-base font-bold text-navy shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-bharat hover:bg-bharat hover:text-white hover:shadow-xl hover:shadow-bharat/25">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        अपनी गली की तस्वीर भेजें
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ 5. DIGITAL CHAUPAL ══════════ -->
+<section id="chaupal" class="relative overflow-hidden bg-navy py-20 lg:py-28">
+
+  <div class="pointer-events-none absolute inset-0">
+    <div class="absolute -left-32 top-0 h-[30rem] w-[30rem] rounded-full bg-saffron/20 blur-[130px]"></div>
+    <div class="absolute -right-32 bottom-0 h-[28rem] w-[28rem] rounded-full bg-bharat/20 blur-[130px]"></div>
+    <div class="absolute inset-0 opacity-[0.14]
+                [background-image:linear-gradient(to_right,white_1px,transparent_1px),linear-gradient(to_bottom,white_1px,transparent_1px)]
+                [background-size:70px_70px]
+                [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)]"></div>
+  </div>
+
+  <div class="relative mx-auto max-w-6xl px-4 sm:px-6">
+
+    <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
+      <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-saffron backdrop-blur">
+        डिजिटल चौपाल
+      </span>
+      <h2 class="mt-5 font-head text-4xl font-extrabold leading-tight text-white sm:text-5xl">
+        अपनी समस्या <span class="text-gradient-warm">सीधे पहुँचाएँ</span>
+      </h2>
+      <p class="mt-4 text-base leading-relaxed text-white/60 sm:text-lg">
+        नीचे दिया गया फॉर्म भरें — आपकी समस्या सीधे महेन्द्र राठी जी के कार्यालय तक पहुँचेगी और 48 घंटे में कार्रवाई सुनिश्चित की जाएगी।
+      </p>
+    </div>
+
+    <div class="mt-14" data-aos="zoom-in" data-aos-delay="120">
+      <div class="glass-dark rounded-[2rem] p-6 shadow-[0_30px_80px_-30px_rgba(0,0,0,0.7)] sm:p-10">
+
+        <form id="chaupalForm"
+              action="https://formspree.io/f/xyekjkae"
+              method="POST"
+              class="grid gap-5 sm:grid-cols-2">
+
+          <input type="hidden" name="_subject" value="नई समस्या — डिजिटल चौपाल (वेबसाइट)" />
+          <input type="hidden" name="_language" value="hi" />
+
+          <div class="sm:col-span-1">
+            <label for="name" class="mb-2 block font-head text-sm font-bold text-white/85">
+              पूरा नाम <span class="text-saffron">*</span>
+            </label>
+            <input id="name" name="name" type="text" required autocomplete="name"
+                   placeholder="जैसे: राहुल शर्मा"
+                   class="w-full rounded-xl border border-white/12 bg-white/[0.07] px-4 py-3.5 text-white placeholder-white/35 outline-none transition duration-300 focus:border-saffron focus:bg-white/10 focus:ring-4 focus:ring-saffron/20" />
+          </div>
+
+          <div class="sm:col-span-1">
+            <label for="mobile" class="mb-2 block font-head text-sm font-bold text-white/85">
+              मोबाइल नंबर <span class="text-saffron">*</span>
+            </label>
+            <input id="mobile" name="mobile" type="tel" required inputmode="numeric" pattern="[0-9+ -]{10,15}"
+                   autocomplete="tel" placeholder="10 अंकों का नंबर"
+                   class="w-full rounded-xl border border-white/12 bg-white/[0.07] px-4 py-3.5 text-white placeholder-white/35 outline-none transition duration-300 focus:border-saffron focus:bg-white/10 focus:ring-4 focus:ring-saffron/20" />
+          </div>
+
+          <div class="sm:col-span-1">
+            <label for="block" class="mb-2 block font-head text-sm font-bold text-white/85">
+              गली / ब्लॉक <span class="text-saffron">*</span>
+            </label>
+            <input id="block" name="block" type="text" required
+                   placeholder="जैसे: लक्ष्मण विहार, ब्लॉक-C, गली नं. 4"
+                   class="w-full rounded-xl border border-white/12 bg-white/[0.07] px-4 py-3.5 text-white placeholder-white/35 outline-none transition duration-300 focus:border-saffron focus:bg-white/10 focus:ring-4 focus:ring-saffron/20" />
+          </div>
+
+          <div class="sm:col-span-1">
+            <label for="category" class="mb-2 block font-head text-sm font-bold text-white/85">
+              समस्या का प्रकार <span class="text-saffron">*</span>
+            </label>
+            <div class="relative">
+              <select id="category" name="category" required
+                      class="w-full appearance-none rounded-xl border border-white/12 bg-white/[0.07] px-4 py-3.5 pr-11 text-white outline-none transition duration-300 focus:border-saffron focus:bg-white/10 focus:ring-4 focus:ring-saffron/20">
+                <option value="" disabled selected class="text-navy">-- चुनें --</option>
+                <option class="text-navy" value="सड़क एवं नाली">सड़क एवं नाली</option>
+                <option class="text-navy" value="पानी की आपूर्ति">पानी की आपूर्ति</option>
+                <option class="text-navy" value="बिजली / स्ट्रीट लाइट">बिजली / स्ट्रीट लाइट</option>
+                <option class="text-navy" value="सफाई एवं कचरा प्रबंधन">सफाई एवं कचरा प्रबंधन</option>
+                <option class="text-navy" value="सीवर एवं ड्रेनेज">सीवर एवं ड्रेनेज</option>
+                <option class="text-navy" value="पार्क एवं सार्वजनिक स्थल">पार्क एवं सार्वजनिक स्थल</option>
+                <option class="text-navy" value="सुरक्षा एवं कानून-व्यवस्था">सुरक्षा एवं कानून-व्यवस्था</option>
+                <option class="text-navy" value="अन्य">अन्य</option>
+              </select>
+              <svg class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-white/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </div>
+          </div>
+
+          <div class="sm:col-span-2">
+            <label for="message" class="mb-2 block font-head text-sm font-bold text-white/85">
+              समस्या का विवरण <span class="text-saffron">*</span>
+            </label>
+            <textarea id="message" name="message" rows="5" required
+                      placeholder="कृपया अपनी समस्या विस्तार से लिखें — कब से है, कहाँ है, क्या दिक्कत हो रही है..."
+                      class="w-full resize-none rounded-xl border border-white/12 bg-white/[0.07] px-4 py-3.5 text-white placeholder-white/35 outline-none transition duration-300 focus:border-saffron focus:bg-white/10 focus:ring-4 focus:ring-saffron/20"></textarea>
+          </div>
+
+          <div class="sm:col-span-2 flex items-start gap-3 rounded-xl border border-white/8 bg-white/[0.04] p-4">
+            <svg class="mt-0.5 h-4 w-4 shrink-0 text-bharat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <p class="text-xs leading-relaxed text-white/50">
+              आपकी जानकारी पूर्णतः सुरक्षित है। इसका उपयोग केवल आपकी समस्या के समाधान हेतु किया जाएगा।
+            </p>
+          </div>
+
+          <div class="sm:col-span-2">
+            <button type="submit" id="submitBtn"
+                    class="group relative flex w-full items-center justify-center gap-3 overflow-hidden rounded-xl bg-gradient-to-r from-saffron via-orange-500 to-bharat px-8 py-4 font-head text-base font-extrabold text-white shadow-xl shadow-saffron/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-saffron/45 active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-70">
+              <span class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full"></span>
+              <svg id="submitIcon" class="relative h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              <span id="submitText" class="relative">समस्या दर्ज करें</span>
+            </button>
+          </div>
+
+          <div class="sm:col-span-2">
+            <div id="formStatus" class="hidden rounded-xl px-5 py-4 text-sm font-semibold"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="mt-10 grid gap-4 sm:grid-cols-3" data-aos="fade-up">
+      <a href="tel:9810845923" class="glass-dark group flex items-center gap-4 rounded-2xl p-5 transition hover:-translate-y-1 hover:border-saffron/40">
+        <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-saffron/15 text-saffron">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        </span>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-widest text-white/40">सीधे बात करें</p>
+          <p class="font-head text-base font-bold text-white">9810845923</p>
+        </div>
+      </a>
+
+      <a href="https://wa.me/919810845923" target="_blank" rel="noopener" class="glass-dark group flex items-center gap-4 rounded-2xl p-5 transition hover:-translate-y-1 hover:border-bharat/40">
+        <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-bharat/15 text-bharat">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        </span>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-widest text-white/40">व्हाट्सएप</p>
+          <p class="font-head text-base font-bold text-white">तुरंत जुड़ें</p>
+        </div>
+      </a>
+
+      <div class="glass-dark flex items-center gap-4 rounded-2xl p-5">
+        <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/10 text-white">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </span>
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-widest text-white/40">कार्यालय समय</p>
+          <p class="font-head text-base font-bold text-white">प्रातः 9 — सायं 8</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════ 6. FOOTER ══════════ -->
+<footer id="contact" class="relative overflow-hidden bg-[#0a0f1e] pt-20 pb-8">
+  <div class="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-saffron/50 to-transparent"></div>
+  <div class="pointer-events-none absolute -left-32 top-0 h-96 w-96 rounded-full bg-saffron/8 blur-[120px]"></div>
+
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="grid gap-12 lg:grid-cols-[1.4fr_1fr_1.2fr]">
+
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-saffron to-bharat text-white shadow-lg shadow-saffron/25">
+            <span class="font-display text-xl leading-none">म</span>
+          </span>
+          <div class="leading-none">
+            <p class="font-head text-xl font-extrabold text-white">महेन्द्र राठी</p>
+            <p class="mt-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-saffron">वार्ड 33 • गुरुग्राम</p>
+          </div>
+        </div>
+
+        <p class="mt-6 max-w-sm text-sm leading-relaxed text-white/50">
+          संकल्प • सेवा • समाधान — वार्ड 33 (लक्ष्मण विहार - सैक्टर 4) के हर नागरिक की आवाज़,
+          हर समस्या का समाधान। साथ मिलकर बनाएँ एक विकसित और समृद्ध गुरुग्राम।
+        </p>
+
+        <div class="mt-7 flex items-center gap-3">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"
+             class="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/5 text-white/70 transition-all duration-300 hover:-translate-y-1 hover:border-[#1877F2] hover:bg-[#1877F2] hover:text-white hover:shadow-lg hover:shadow-[#1877F2]/30">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+          </a>
+          <a href="https://wa.me/919810845923" target="_blank" rel="noopener" aria-label="WhatsApp"
+             class="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/5 text-white/70 transition-all duration-300 hover:-translate-y-1 hover:border-[#25D366] hover:bg-[#25D366] hover:text-white hover:shadow-lg hover:shadow-[#25D366]/30">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </a>
+          <a href="tel:9810845923" aria-label="Call"
+             class="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/5 text-white/70 transition-all duration-300 hover:-translate-y-1 hover:border-saffron hover:bg-saffron hover:text-white hover:shadow-lg hover:shadow-saffron/30">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-head text-sm font-extrabold uppercase tracking-[0.18em] text-white/80">त्वरित लिंक</h4>
+        <ul class="mt-6 space-y-3.5">
+          <li><a href="#home"    class="group inline-flex items-center gap-2 text-sm text-white/50 transition hover:text-saffron"><span class="h-px w-0 bg-saffron transition-all duration-300 group-hover:w-4"></span>होम</a></li>
+          <li><a href="#vision"  class="group inline-flex items-center gap-2 text-sm text-white/50 transition hover:text-saffron"><span class="h-px w-0 bg-saffron transition-all duration-300 group-hover:w-4"></span>विजन</a></li>
+          <li><a href="#work"    class="group inline-flex items-center gap-2 text-sm text-white/50 transition hover:text-saffron"><span class="h-px w-0 bg-saffron transition-all duration-300 group-hover:w-4"></span>हमारे कार्य</a></li>
+          <li><a href="#chaupal" class="group inline-flex items-center gap-2 text-sm text-white/50 transition hover:text-saffron"><span class="h-px w-0 bg-saffron transition-all duration-300 group-hover:w-4"></span>डिजिटल चौपाल</a></li>
+          <li><a href="#contact" class="group inline-flex items-center gap-2 text-sm text-white/50 transition hover:text-saffron"><span class="h-px w-0 bg-saffron transition-all duration-300 group-hover:w-4"></span>संपर्क</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-head text-sm font-extrabold uppercase tracking-[0.18em] text-white/80">संपर्क करें</h4>
+
+        <div class="mt-6 space-y-5">
+          <div class="flex items-start gap-4">
+            <span class="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/5 text-saffron">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+            </span>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-widest text-white/35">कार्यालय</p>
+              <p class="mt-1 text-sm leading-relaxed text-white/70">
+                राठी ऑफिस, लक्ष्मण विहार,<br />धनवापुर रोड, गुरूग्राम
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <span class="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/5 text-bharat">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+            </span>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-widest text-white/35">फ़ोन</p>
+              <a href="tel:9810845923" class="mt-1 block font-head text-lg font-bold text-white transition hover:text-saffron">📞 9810845923</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#chaupal"
+           class="mt-7 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-saffron to-bharat px-5 py-3 font-head text-sm font-bold text-white shadow-lg shadow-saffron/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-saffron/40">
+          समस्या दर्ज करें
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/8 pt-7 sm:flex-row">
+      <p class="text-center text-xs text-white/40 sm:text-left">
+        © <span id="year">2025</span> महेन्द्र राठी • वार्ड 33, लक्ष्मण विहार – सैक्टर 4, गुरुग्राम। सर्वाधिकार सुरक्षित।
+      </p>
+      <p class="text-xs text-white/30">
+        जनसेवा ही सच्ची सेवा है 🇮🇳
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ══════════ 7. FLOATING WHATSAPP ══════════ -->
+<a href="https://wa.me/919810845923?text=नमस्ते%20महेन्द्र%20राठी%20जी%2C%20मुझे%20अपनी%20समस्या%20बतानी%20है।"
+   target="_blank" rel="noopener" aria-label="व्हाट्सएप पर संपर्क करें"
+   class="wa-pulse group fixed bottom-6 right-5 z-[70] grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-2xl shadow-[#25D366]/40 transition-all duration-300 hover:scale-110 hover:shadow-[#25D366]/60 sm:bottom-8 sm:right-8 sm:h-16 sm:w-16">
+
+  <svg class="h-7 w-7 transition-transform duration-300 group-hover:rotate-12 sm:h-8 sm:w-8" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+
+  <span class="pointer-events-none absolute right-full mr-3 hidden whitespace-nowrap rounded-xl bg-navy px-4 py-2 font-head text-sm font-bold text-white opacity-0 shadow-xl transition-all duration-300 group-hover:opacity-100 sm:block">
+    व्हाट्सएप पर जुड़ें
+  </span>
+</a>
+
+
+<!-- ══════════ SCRIPTS ══════════ -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+/* ============================================================
+   ✅ गैलरी डेटा — आपके असली डायरेक्ट इमेज लिंक (i.ibb.co)
+   ============================================================ */
+const GALLERY = [
+  { src: "https://i.ibb.co/x86qKKHd/1000180926.jpg",              title: "जनसंपर्क अभियान" },
+  { src: "https://i.ibb.co/B5JMBgh5/1000181963.jpg",              title: "जनसुनवाई" },
+  { src: "https://i.ibb.co/h1fjrYKp/1000182221.jpg",              title: "मोहल्ला भ्रमण" },
+  { src: "https://i.ibb.co/fzMPfkFn/1000182227.jpg",              title: "नागरिक संवाद" },
+  { src: "https://i.ibb.co/GQH2p5Zc/1000182001.jpg",              title: "समस्या निरीक्षण" },
+  { src: "https://i.ibb.co/4ZThg8c8/IMG-20250201-WA0027.jpg",     title: "जनसेवा के पल" },
+  { src: "https://i.ibb.co/1GmQqDqb/IMG-20260815-075429.jpg",     title: "प्रातःकालीन भ्रमण" },
+  { src: "https://i.ibb.co/5xYGnkbc/IMG-20260815-091204.jpg",     title: "सफाई अभियान" },
+  { src: "https://i.ibb.co/CppZD2Sd/IMG-20260815-190924.jpg",     title: "सायंकालीन चौपाल" },
+  { src: "https://i.ibb.co/rRBpC4tR/IMG-20260815-191526.jpg",     title: "जनता से संवाद" },
+  { src: "https://i.ibb.co/84PxnpZF/IMG-20260921-170033.jpg",     title: "विकास कार्य निरीक्षण" },
+  { src: "https://i.ibb.co/5xhJ3c74/IMG-20260921-152735.jpg",     title: "सड़क निर्माण कार्य" },
+  { src: "https://i.ibb.co/kg0yCTZd/IMG-20261001-190233.png",     title: "जनसुनवाई शिविर" },
+  { src: "https://i.ibb.co/Ps8S1SdH/FB-IMG-1791606111875.jpg",    title: "नागरिक सभा" },
+  { src: "https://i.ibb.co/XrGXHkWz/FB-IMG-1791606108757.jpg",    title: "मोहल्ला बैठक" },
+  { src: "https://i.ibb.co/qM96R2m5/FB-IMG-1791606088169.jpg",    title: "जनसंपर्क अभियान" },
+  { src: "https://i.ibb.co/N2VzVbG2/FB-IMG-1791606064652.jpg",    title: "समस्या समाधान" },
+  { src: "https://i.ibb.co/HTSgf40W/FB-IMG-1791606055997.jpg",    title: "क्षेत्र भ्रमण" },
+  { src: "https://i.ibb.co/99WvZrV5/FB-IMG-1791606041012.jpg",    title: "जनसेवा कार्यक्रम" },
+  { src: "https://i.ibb.co/xth6jQH5/FB-IMG-1791606025988.jpg",    title: "सामुदायिक कार्यक्रम" },
+  { src: "https://i.ibb.co/nsrs9vrZ/FB-IMG-1791606017990.jpg",    title: "नागरिकों से मुलाकात" },
+  { src: "https://i.ibb.co/pTB71J1/FB-IMG-1791606010883.jpg",     title: "महिला सम्मान समारोह" },
+  { src: "https://i.ibb.co/LDMBVtDV/FB-IMG-1791605992375.jpg",    title: "स्वच्छता अभियान" },
+  { src: "https://i.ibb.co/CphfZ3MH/FB-IMG-1791605975725.jpg",    title: "युवाओं से संवाद" },
+  { src: "https://i.ibb.co/d413MDFX/FB-IMG-1791605969955.jpg",    title: "पार्क विकास कार्य" },
+  { src: "https://i.ibb.co/Kjf7k7C4/FB-IMG-1791605963109.jpg",    title: "स्ट्रीट लाइट निरीक्षण" },
+  { src: "https://i.ibb.co/DDcQsWvQ/FB-IMG-1791605959197.jpg",    title: "जल आपूर्ति निरीक्षण" },
+  { src: "https://i.ibb.co/yB8h9Sjb/FB-IMG-1791605955515.jpg",    title: "सीवर लाइन जाँच" },
+  { src: "https://i.ibb.co/nqP2DD4T/FB-IMG-1791605947644.jpg",    title: "नाले की सफाई" },
+  { src: "https://i.ibb.co/Kp4g6Djy/FB-IMG-1791605924243.jpg",    title: "फुटपाथ मरम्मत" },
+  { src: "https://i.ibb.co/d00SNcRx/FB-IMG-1791605916081.jpg",    title: "जनप्रतिनिधि बैठक" },
+  { src: "https://i.ibb.co/Mxfxq4V8/FB-IMG-1791605879597.jpg",    title: "राशन वितरण" },
+  { src: "https://i.ibb.co/4wC7mp1D/FB-IMG-1791605875312.jpg",    title: "बुज़ुर्गों का सम्मान" },
+  { src: "https://i.ibb.co/NdHmzKWJ/FB-IMG-1791605867091.jpg",    title: "दिव्यांग जन सहायता" }
+];
+
+/* ── Ratio चक्र — masonry को अलग-अलग ऊँचाई देने के लिए ── */
+const RATIOS = ['aspect-[4/5]', 'aspect-[4/3]', 'aspect-square', 'aspect-[3/4]', 'aspect-[5/4]', 'aspect-[4/5]'];
+
+/* ── गैलरी रेंडर ── */
+function renderGallery() {
+  const grid = document.getElementById('masonryGrid');
+  if (!grid) return;
+
+  GALLERY.forEach((item, i) => {
+    const a = document.createElement('a');
+    a.href = item.src;
+    a.className =
+      'glightbox masonry-item group relative block overflow-hidden rounded-2xl bg-navy/5 shadow-lg ring-1 ring-navy/5 ' +
+      'transition-all duration-500 will-change-transform hover:-translate-y-1.5 hover:shadow-2xl';
+    a.setAttribute('data-gallery', 'janseva');
+    a.setAttribute('data-title', item.title);
+    a.setAttribute('data-description', 'वार्ड 33 • लक्ष्मण विहार – सैक्टर 4, गुरुग्राम');
+    a.setAttribute('data-aos', 'fade-up');
+    a.setAttribute('data-aos-delay', String((i % 4) * 70));
+
+    a.innerHTML = `
+      <div class="${RATIOS[i % RATIOS.length]} w-full overflow-hidden">
+        <img src="${item.src}"
+             alt="${item.title} — महेन्द्र राठी"
+             data-label="${item.title}"
+             loading="lazy"
+             onerror="imgFallback(this)"
+             class="h-full w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.12]" />
+      </div>
+
+      <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/25 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+
+      <div class="pointer-events-none absolute inset-x-0 bottom-0 translate-y-5 p-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white ring-1 ring-white/25 backdrop-blur-md">
+          <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>
+          ज़ूम करें
+        </span>
+        <p class="mt-2 font-head text-[15px] font-extrabold leading-snug text-white drop-shadow-lg">${item.title}</p>
+      </div>
+
+      <span class="pointer-events-none absolute right-3 top-3 grid h-9 w-9 scale-75 place-items-center rounded-full bg-saffron text-white opacity-0 shadow-lg transition-all duration-500 group-hover:scale-100 group-hover:opacity-100">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      </span>
+
+      <span class="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/0 transition duration-500 group-hover:ring-white/20"></span>
+    `;
+
+    grid.appendChild(a);
+  });
+}
+
+/* ── Init ── */
+document.addEventListener('DOMContentLoaded', () => {
+
+  renderGallery();
+
+  AOS.init({
+    duration: 850,
+    easing: 'ease-out-cubic',
+    once: true,
+    offset: 90
+  });
+  setTimeout(() => AOS.refresh(), 350);
+
+  GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    zoomable: true,
+    draggable: true,
+    openEffect: 'zoom',
+    closeEffect: 'fade',
+    slideEffect: 'slide',
+    moreLength: 0,
+    svg: {
+      close: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>',
+      next: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>',
+      prev: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>'
+    }
+  });
+
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuIcon = document.getElementById('menuIcon');
+
+  menuBtn?.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('hidden') === false;
+    menuIcon.innerHTML = open
+      ? '<path d="M18 6 6 18M6 6l12 12"/>'
+      : '<path d="M4 7h16M4 12h16M4 17h16"/>';
+  });
+
+  mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuIcon.innerHTML = '<path d="M4 7h16M4 12h16M4 17h16"/>';
+    });
+  });
+
+  const navbar = document.getElementById('navbar');
+  const onScroll = () => {
+    if (window.scrollY > 30) {
+      navbar.classList.add('bg-white/85', 'shadow-[0_15px_50px_-20px_rgba(15,23,42,0.28)]', 'py-2');
+      navbar.classList.remove('bg-white/60', 'py-2.5');
+    } else {
+      navbar.classList.remove('bg-white/85', 'shadow-[0_15px_50px_-20px_rgba(15,23,42,0.28)]', 'py-2');
+      navbar.classList.add('bg-white/60', 'py-2.5');
+    }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  const form = document.getElementById('chaupalForm');
+  const statusBox = document.getElementById('formStatus');
+  const submitBtn = document.getElementById('submitBtn');
+  const submitText = document.getElementById('submitText');
+  const submitIcon = document.getElementById('submitIcon');
+
+  const showStatus = (type, msg) => {
+    statusBox.className = 'rounded-xl px-5 py-4 text-sm font-semibold ' +
+      (type === 'success'
+        ? 'bg-bharat/15 text-green-300 ring-1 ring-bharat/30'
+        : 'bg-red-500/15 text-red-300 ring-1 ring-red-500/30');
+    statusBox.innerHTML = msg;
+    statusBox.classList.remove('hidden');
+  };
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    submitBtn.disabled = true;
+    submitText.textContent = 'भेजा जा रहा है...';
+    submitIcon.innerHTML = '<circle cx="12" cy="12" r="9" stroke-opacity="0.25"/><path d="M21 12a9 9 0 0 0-9-9"/>';
+    submitIcon.classList.add('animate-spin');
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        showStatus('success',
+          '✅ धन्यवाद! आपकी समस्या सफलतापूर्वक दर्ज हो गई है। महेन्द्र राठी जी की टीम शीघ्र ही आपसे संपर्क करेगी।');
+        form.reset();
+      } else {
+        const data = await res.json().catch(() => ({}));
+        const detail = data?.errors?.map(er => er.message).join(', ');
+        showStatus('error', '⚠️ ' + (detail || 'कुछ गड़बड़ हुई। कृपया दोबारा प्रयास करें या सीधे 9810845923 पर कॉल करें।'));
+      }
+    } catch (err) {
+      showStatus('error',
+        '⚠️ नेटवर्क समस्या। कृपया इंटरनेट जाँचें या सीधे <a href="tel:9810845923" class="underline">9810845923</a> पर कॉल करें।');
+    } finally {
+      submitBtn.disabled = false;
+      submitText.textContent = 'समस्या दर्ज करें';
+      submitIcon.classList.remove('animate-spin');
+      submitIcon.innerHTML = '<path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>';
+      statusBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+});
+</script>
+</body>
+</html>
